@@ -3,80 +3,188 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio - Gustavo Benjamin Campos de Santana</title>
+    <title>Gustavo Benjamin - Instrutor SENAI | Automotiva Pesada</title>
     <style>
-        /* Estilos básicos para organizar o layout */
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
+        * {
+            box-sizing: border-box;
             margin: 0;
-            padding: 20px;
-            background-color: #f4f4f9;
-            color: #333;
+            padding: 0;
         }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #f0f2f5;
+            color: #1c252e;
+        }
+        /* Cabeçalho */
         header {
-            text-align: center;
-            padding: 20px 0;
-            background-color: #007bff;
+            background-color: #003366;
             color: white;
-            border-radius: 8px;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
         }
-        section {
-            background: white;
-            margin: 20px 0;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        .profile-img {
-            width: 100%;
-            max-width: 400px;
-            height: auto;
-            border-radius: 8px;
-            display: block;
-            margin: 15px auto;
-        }
-        .gallery {
+        .header-container {
+            max-width: 1000px;
+            margin: 0 auto;
             display: flex;
+            flex-direction: column;
+            align-items: center;
             gap: 15px;
-            flex-wrap: wrap;
-            justify-content: center;
         }
-        .gallery img {
+        .senai-logo {
+            max-width: 200px;
+            height: auto;
+            background-color: white;
+            padding: 8px 16px;
+            border-radius: 6px;
+        }
+        header h1 {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+        .subtitle {
+            font-size: 1.1rem;
+            color: #d1e3ff;
+            font-weight: 500;
+        }
+        /* Container Principal */
+        main {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        /* Seções */
+        section {
+            background: #ffffff;
+            margin-bottom: 25px;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            border-left: 5px solid #0056b3;
+        }
+        h2 {
+            color: #003366;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+        p {
+            margin-bottom: 15px;
+            color: #4a5568;
+            font-size: 1rem;
+        }
+        /* Imagem de Destaque */
+        .hero-img {
             width: 100%;
-            max-width: 300px;
-            height: 200px;
+            max-height: 400px;
             object-fit: cover;
             border-radius: 8px;
+            margin: 15px 0;
+        }
+        /* Galeria de Máquinas */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .card {
+            background: #fafafa;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.2s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card-body {
+            padding: 15px;
+        }
+        .card-body h3 {
+            font-size: 1.1rem;
+            color: #003366;
+            margin-bottom: 8px;
+        }
+        .card-body p {
+            font-size: 0.9rem;
+            margin-bottom: 0;
+        }
+        /* Rodapé */
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #718096;
+            font-size: 0.9rem;
+            margin-top: 40px;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Olá, Gustavo Benjamin Campos de Santana</h1>
-        <p>Bem-vindo ao meu portfólio profissional</p>
+        <div class="header-container">
+            <!-- Logo Oficial do SENAI -->
+            <img class="senai-logo" src="https://upload.wikimedia.org/wikipedia/commons/8/8c/SENAI_logo_2024.png" alt="Logo SENAI">
+            <h1>Gustavo Benjamin Campos de Santana</h1>
+            <p class="subtitle">Instrutor de Formação Profissional – Automotiva Pesada</p>
+        </div>
     </header>
 
-    <section>
-        <h2>Sobre Mim & Minha Profissão</h2>
-        <img class="profile-img" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80" alt="Ambiente de Trabalho">
-        <p>
-            Sou profissional da área de **Tecnologia da Informação e Desenvolvimento de Software**. Tenho foco na criação de soluções eficientes, desenvolvimento de aplicações web modernas e resolução de problemas complexos por meio do código.
-        </p>
-        <p>
-            Busco sempre me atualizar com as melhores práticas do mercado, trabalhando com tecnologias como HTML5, CSS3, JavaScript e diversas outras ferramentas do ecossistema de desenvolvimento.
-        </p>
-    </section>
+    <main>
+        <!-- Apresentação Profissional -->
+        <section>
+            <h2>Sobre Mim & Atuação Profissional</h2>
+            <img class="hero-img" src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80" alt="Instrutor técnico trabalhando em maquinário pesado">
+            <p>
+                Atuo como **Instrutor no SENAI**, capacitando profissionais e jovens aprendizes para o setor de **Mecânica Automotiva Pesada**. Com sólida experiência técnica em diagnósticos, manutenção preventiva e corretiva, dedico-me a formar especialistas preparados para responder às exigências da indústria moderna.
+            </p>
+            <p>
+                Minha atuação abrange sistemas hidráulicos avançados, motores de grande porte a diesel, transmissões pesadas, eletroeletrônica embarcada e manutenção de equipamentos de linha amarela e veículos pesados.
+            </p>
+        </section>
 
-    <section>
-        <h2>Galeria de Projetos & Espaço de Trabalho</h2>
-        <div class="gallery">
-            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=500&q=80" alt="Código em tela de computador">
-            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=500&q=80" alt="Programação e tecnologia">
-            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=500&q=80" alt="Notebook com linhas de código">
-        </div>
-    </section>
+        <!-- Galeria de Equipamentos e Máquinas -->
+        <section>
+            <h2>Especialidades em Maquinário Pesado</h2>
+            <p>Conheça os principais segmentos de atuação e treinamento ministrados:</p>
+            
+            <div class="gallery">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1579412690850-bd41cd0af397?auto=format&fit=crop&w=600&q=80" alt="Escavadeira e Linha Amarela">
+                    <div class="card-body">
+                        <h3>Máquinas de Linha Amarela</h3>
+                        <p>Manutenção e diagnóstico em escavadeiras hidráulicas, pás carregadeiras e tratores de esteira.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?auto=format&fit=crop&w=600&q=80" alt="Caminhões e Veículos Pesados">
+                    <div class="card-body">
+                        <h3>Caminhões & Frota Pesada</h3>
+                        <p>Injeção eletrônica a diesel, sistemas de freio pneumático e trens de força para transporte pesado.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1508873696983-2df515122519?auto=format&fit=crop&w=600&q=80" alt="Motor a Diesel de grande porte">
+                    <div class="card-body">
+                        <h3>Motores Diesel e Hidráulica</h3>
+                        <p>Metrologia aplicável, desmontagem/montagem de motores pesados e análise de sistemas hidráulicos de alta pressão.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Gustavo Benjamin Campos de Santana – Instrutor SENAI</p>
+    </footer>
 
 </body>
 </html>
